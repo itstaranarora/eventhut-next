@@ -1,0 +1,323 @@
+[
+  {
+    "price": 99,
+    "isOnline": true,
+    "imgURL": "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
+    "_id": "5fc553c7ec09e69f78c9aa21",
+    "name": "UI UX Design & Prototyping",
+    "datetime": "2020-12-31T06:30:00.000Z",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam\n\ncorporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur?",
+    "published_at": "2020-11-30T20:19:28.768Z",
+    "address": {
+      "_id": "5fc553c7ec09e69f78c9aa22",
+      "location": "#7944, Street. 8, New Shakti Nager",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "__v": 0,
+      "id": "5fc553c7ec09e69f78c9aa22"
+    },
+    "createdAt": "2020-11-30T20:19:19.650Z",
+    "updatedAt": "2021-04-13T10:31:16.112Z",
+    "__v": 1,
+    "user": {
+      "confirmed": false,
+      "blocked": false,
+      "ProfileURL": "https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg",
+      "_id": "5fc54efa1c5d339c4c4bf475",
+      "username": "taran",
+      "email": "taran@taran.com",
+      "provider": "local",
+      "createdAt": "2020-11-30T19:58:50.107Z",
+      "updatedAt": "2020-11-30T20:21:57.223Z",
+      "__v": 0,
+      "role": "5fc54e7a1c5d339c4c4bf3ae",
+      "name": "taran",
+      "id": "5fc54efa1c5d339c4c4bf475"
+    },
+    "slug": "ui-ux-design-and-prototyping",
+    "categories": [
+      {
+        "events": [
+          "5fc553c7ec09e69f78c9aa21",
+          "5fd718bce6dbf80017a9f4f9",
+          "60069bb881373600179f2bc4",
+          "60069db781373600179f2bc8"
+        ],
+        "_id": "600696d181373600179f2bc0",
+        "name": "Education",
+        "published_at": "2021-01-19T08:22:52.189Z",
+        "createdAt": "2021-01-19T08:22:41.394Z",
+        "updatedAt": "2021-04-13T10:33:29.521Z",
+        "__v": 0,
+        "id": "600696d181373600179f2bc0"
+      }
+    ],
+    "id": "5fc553c7ec09e69f78c9aa21"
+  },
+  {
+    "price": 0,
+    "isOnline": false,
+    "imgURL": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80",
+    "_id": "5fd718bce6dbf80017a9f4f9",
+    "name": "Web 101 - Intro",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur?",
+    "datetime": "2021-01-01T07:30:00.000Z",
+    "published_at": "2020-12-14T07:48:23.962Z",
+    "address": {
+      "_id": "5fd718bce6dbf80017a9f4fa",
+      "location": "#7944, Street. 8, New Shakti Nager",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "__v": 0,
+      "id": "5fd718bce6dbf80017a9f4fa"
+    },
+    "createdAt": "2020-12-14T07:48:12.698Z",
+    "updatedAt": "2021-04-13T10:31:33.268Z",
+    "__v": 1,
+    "user": {
+      "confirmed": true,
+      "blocked": false,
+      "ProfileURL": "https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg",
+      "_id": "5fc736771283f300173edb0e",
+      "username": "Taranpreet",
+      "email": "itstaranarora@gmail.com",
+      "provider": "local",
+      "createdAt": "2020-12-02T06:38:47.069Z",
+      "updatedAt": "2020-12-02T06:38:47.940Z",
+      "__v": 0,
+      "role": "5fc54e7a1c5d339c4c4bf3ae",
+      "id": "5fc736771283f300173edb0e"
+    },
+    "slug": "web-101-intro",
+    "categories": [
+      {
+        "events": [
+          "5fc553c7ec09e69f78c9aa21",
+          "5fd718bce6dbf80017a9f4f9",
+          "60069bb881373600179f2bc4",
+          "60069db781373600179f2bc8"
+        ],
+        "_id": "600696d181373600179f2bc0",
+        "name": "Education",
+        "published_at": "2021-01-19T08:22:52.189Z",
+        "createdAt": "2021-01-19T08:22:41.394Z",
+        "updatedAt": "2021-04-13T10:33:29.521Z",
+        "__v": 0,
+        "id": "600696d181373600179f2bc0"
+      }
+    ],
+    "id": "5fd718bce6dbf80017a9f4f9"
+  },
+  {
+    "price": 0,
+    "isOnline": false,
+    "imgURL": "https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/lohri/lohri-event.jpg",
+    "_id": "6006966181373600179f2bbc",
+    "name": "Lohri Celebration",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur?",
+    "datetime": "2021-01-13T06:30:00.000Z",
+    "published_at": "2021-01-19T08:24:54.592Z",
+    "address": {
+      "_id": "6006966181373600179f2bbd",
+      "location": "PCTE Campus 2",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "__v": 0,
+      "id": "6006966181373600179f2bbd"
+    },
+    "createdAt": "2021-01-19T08:20:49.091Z",
+    "updatedAt": "2021-04-13T10:31:45.026Z",
+    "__v": 1,
+    "user": {
+      "confirmed": true,
+      "blocked": false,
+      "ProfileURL": "https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg",
+      "_id": "5fc736771283f300173edb0e",
+      "username": "Taranpreet",
+      "email": "itstaranarora@gmail.com",
+      "provider": "local",
+      "createdAt": "2020-12-02T06:38:47.069Z",
+      "updatedAt": "2020-12-02T06:38:47.940Z",
+      "__v": 0,
+      "role": "5fc54e7a1c5d339c4c4bf3ae",
+      "id": "5fc736771283f300173edb0e"
+    },
+    "slug": "lohri-celebration",
+    "categories": [
+      {
+        "events": ["6006966181373600179f2bbc", "6006a01081373600179f2bcd"],
+        "_id": "6006967b81373600179f2bbf",
+        "name": "Party",
+        "published_at": "2021-01-19T08:21:26.760Z",
+        "createdAt": "2021-01-19T08:21:15.140Z",
+        "updatedAt": "2021-04-13T10:32:23.700Z",
+        "__v": 0,
+        "id": "6006967b81373600179f2bbf"
+      }
+    ],
+    "id": "6006966181373600179f2bbc"
+  },
+  {
+    "price": 1200,
+    "isOnline": false,
+    "imgURL": "https://images.squarespace-cdn.com/content/v1/5b45c797372b96dddd6646ed/1549889907262-YIT3JJS89NFC4QQR5EI4/ke17ZwdGBToddI8pDm48kGPVK--wGoWXJsqwlxbZlQN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5enfxu_O4VeONvneR-F6W8oeFhFqSrYyNrfPB9Y70_gvQ/TEDx_2018-181118-029.jpg?format=2500w",
+    "_id": "60069bb881373600179f2bc4",
+    "name": "Tedx Ludhiana",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur?",
+    "datetime": "2021-01-28T06:30:00.000Z",
+    "published_at": "2021-01-19T08:43:49.344Z",
+    "address": {
+      "_id": "60069bb881373600179f2bc5",
+      "location": "PCTE Campus 2",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "__v": 0,
+      "id": "60069bb881373600179f2bc5"
+    },
+    "createdAt": "2021-01-19T08:43:36.698Z",
+    "updatedAt": "2021-04-13T10:31:55.732Z",
+    "__v": 1,
+    "user": {
+      "confirmed": true,
+      "blocked": false,
+      "ProfileURL": "https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg",
+      "_id": "5fc736771283f300173edb0e",
+      "username": "Taranpreet",
+      "email": "itstaranarora@gmail.com",
+      "provider": "local",
+      "createdAt": "2020-12-02T06:38:47.069Z",
+      "updatedAt": "2020-12-02T06:38:47.940Z",
+      "__v": 0,
+      "role": "5fc54e7a1c5d339c4c4bf3ae",
+      "id": "5fc736771283f300173edb0e"
+    },
+    "slug": "tedx-ludhiana",
+    "categories": [
+      {
+        "events": [
+          "5fc553c7ec09e69f78c9aa21",
+          "5fd718bce6dbf80017a9f4f9",
+          "60069bb881373600179f2bc4",
+          "60069db781373600179f2bc8"
+        ],
+        "_id": "600696d181373600179f2bc0",
+        "name": "Education",
+        "published_at": "2021-01-19T08:22:52.189Z",
+        "createdAt": "2021-01-19T08:22:41.394Z",
+        "updatedAt": "2021-04-13T10:33:29.521Z",
+        "__v": 0,
+        "id": "600696d181373600179f2bc0"
+      }
+    ],
+    "id": "60069bb881373600179f2bc4"
+  },
+  {
+    "price": 0,
+    "isOnline": false,
+    "imgURL": "https://images.unsplash.com/photo-1571008887538-b36bb32f4571?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+    "_id": "60069db781373600179f2bc8",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur?",
+    "name": "Run for Cancer",
+    "published_at": "2021-01-19T08:55:58.465Z",
+    "address": {
+      "_id": "60069e9181373600179f2bcb",
+      "location": "Guru Nanak Stadium",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "__v": 0,
+      "id": "60069e9181373600179f2bcb"
+    },
+    "createdAt": "2021-01-19T08:52:07.486Z",
+    "updatedAt": "2021-04-13T10:33:29.581Z",
+    "__v": 0,
+    "datetime": "2021-01-31T06:30:00.000Z",
+    "user": {
+      "confirmed": true,
+      "blocked": false,
+      "ProfileURL": "https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg",
+      "_id": "606a2784a5f7450017aa2b25",
+      "username": "taran1234",
+      "email": "taran1234@gmail.com",
+      "provider": "local",
+      "createdAt": "2021-04-04T20:54:28.215Z",
+      "updatedAt": "2021-04-04T20:54:28.973Z",
+      "__v": 0,
+      "role": "5fc54e7a1c5d339c4c4bf3ae",
+      "id": "606a2784a5f7450017aa2b25"
+    },
+    "slug": "run-for-cancer",
+    "categories": [
+      {
+        "events": [
+          "5fc553c7ec09e69f78c9aa21",
+          "5fd718bce6dbf80017a9f4f9",
+          "60069bb881373600179f2bc4",
+          "60069db781373600179f2bc8"
+        ],
+        "_id": "600696d181373600179f2bc0",
+        "name": "Education",
+        "published_at": "2021-01-19T08:22:52.189Z",
+        "createdAt": "2021-01-19T08:22:41.394Z",
+        "updatedAt": "2021-04-13T10:33:29.521Z",
+        "__v": 0,
+        "id": "600696d181373600179f2bc0"
+      }
+    ],
+    "id": "60069db781373600179f2bc8"
+  },
+  {
+    "price": 2200,
+    "isOnline": false,
+    "imgURL": "https://ghaintnet.akamaized.net/GhaintPunjab/ddr-against-sidhu-moosewala-dirba-show-ghaintpunjab.jpg",
+    "_id": "6006a01081373600179f2bcd",
+    "name": "Sidhu Moosewala Concert",
+    "datetime": "2021-01-26T14:30:00.000Z",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur? corporis exercitationem doloremque totam voluptatum est at et nisi assumenda corrupti amet fugiat sed maiores officia iste, incidunt itaque! Commodi, tenetur?",
+    "published_at": "2021-01-19T09:02:21.675Z",
+    "address": {
+      "_id": "6006a01081373600179f2bce",
+      "location": "Indoor stadium",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "country": "India",
+      "__v": 0,
+      "id": "6006a01081373600179f2bce"
+    },
+    "createdAt": "2021-01-19T09:02:08.496Z",
+    "updatedAt": "2021-04-13T10:32:23.760Z",
+    "__v": 1,
+    "user": {
+      "confirmed": true,
+      "blocked": false,
+      "ProfileURL": "https://st3.depositphotos.com/4111759/13425/v/600/depositphotos_134255710-stock-illustration-avatar-vector-male-profile-gray.jpg",
+      "_id": "5fc736771283f300173edb0e",
+      "username": "Taranpreet",
+      "email": "itstaranarora@gmail.com",
+      "provider": "local",
+      "createdAt": "2020-12-02T06:38:47.069Z",
+      "updatedAt": "2020-12-02T06:38:47.940Z",
+      "__v": 0,
+      "role": "5fc54e7a1c5d339c4c4bf3ae",
+      "id": "5fc736771283f300173edb0e"
+    },
+    "slug": "sidhu-moosewala-concert",
+    "categories": [
+      {
+        "events": ["6006966181373600179f2bbc", "6006a01081373600179f2bcd"],
+        "_id": "6006967b81373600179f2bbf",
+        "name": "Party",
+        "published_at": "2021-01-19T08:21:26.760Z",
+        "createdAt": "2021-01-19T08:21:15.140Z",
+        "updatedAt": "2021-04-13T10:32:23.700Z",
+        "__v": 0,
+        "id": "6006967b81373600179f2bbf"
+      }
+    ],
+    "id": "6006a01081373600179f2bcd"
+  }
+]
