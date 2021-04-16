@@ -38,15 +38,18 @@ const Admin = ({ events }) => {
 
   const orders = useBooking(user, getToken);
 
-  console.log(orders);
+  getToken().then((res) => console.log(res));
 
-  const data = orders?.map((order) => ({
-    name: order.event.name,
-    id: order._id,
-    mode: order.event.isOnline,
-    datetime: order.event.datetime,
-    total: order.total,
-  }));
+  let data = [];
+  if (orders) {
+    data = orders?.map((order) => ({
+      name: order.event.name,
+      id: order._id,
+      mode: order.event.isOnline,
+      datetime: order.event.datetime,
+      total: order.total,
+    }));
+  }
 
   if (!user) {
     return (

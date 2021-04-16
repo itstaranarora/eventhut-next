@@ -243,7 +243,7 @@ export default function Layout({ children }) {
                 <ListItemText primary="Dashboard" />
               </ListItem>
             </Link>
-            <Link
+            {/* <Link
               href="/dashboard/create"
               style={{ textDecoration: "none", color: "#000" }}
             >
@@ -253,7 +253,7 @@ export default function Layout({ children }) {
                 </ListItemIcon>
                 <ListItemText primary="Create Event" />
               </ListItem>
-            </Link>
+            </Link> */}
           </List>
         </div>
         <Divider />

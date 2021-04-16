@@ -31,6 +31,7 @@ export default function Home({ events }) {
               column-gap: 20px;
               padding: 50px 0;
             }
+
             .home__heading {
               margin-top: 9rem;
               margin-bottom: 4rem;
@@ -50,12 +51,22 @@ export default function Home({ events }) {
                 font-size: 2rem;
                 margin-top: 5rem;
               }
+              .cards {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+              }
             }
 
             @media (max-width: 600px) {
               .home__heading {
                 font-size: 2rem;
                 margin-top: 5rem;
+              }
+              .cards {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 1rem;
               }
             }
           `}

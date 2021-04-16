@@ -264,7 +264,7 @@ function Event({ event }) {
               }
             }
 
-            @media (max-width: 1100px) {
+            @media (max-width: 600px) {
               .cards {
                 display: grid;
                 grid-template-columns: 1fr;
