@@ -6,6 +6,7 @@ import Layout from "components/Layout";
 import Head from "next/head";
 import { API_URL } from "utils/urls";
 import Booking from "components/Booking";
+import GroupIcon from "@material-ui/icons/Group";
 import Card from "components/Card";
 import DefaultErrorPage from "next/error";
 
@@ -87,16 +88,13 @@ function Event({ event }) {
             <div className="event__mobile">
               <Booking data={response} />
             </div>
-            <h3>Organizer</h3>
-            <img
-              alt="binod"
-              src="https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
-            />
-            <span>{response?.user.username}</span>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              corporis exercitationem doloremque totam voluptatum est
-            </p>
+            <h3>Attendees</h3>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <GroupIcon style={{ fontSize: "3rem", marginRight: "1rem" }} />
+              <h4 style={{ fontSize: "2.5rem" }}>
+                {response?.bookings.length}
+              </h4>
+            </div>
           </div>
         </div>
 

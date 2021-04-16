@@ -19,7 +19,14 @@ const useBooking = (user, getToken) => {
             },
           });
           const data = await order_res.json();
-          setOrders(data);
+          const result = data?.map((order) => ({
+            name: order.event.name,
+            id: order._id,
+            mode: order.event.isOnline,
+            datetime: order.event.datetime,
+            total: order.total,
+          }));
+          setOrders(result);
         } catch (err) {
           setOrders([]);
         }
@@ -39,15 +46,6 @@ const Admin = ({ events }) => {
   const orders = useBooking(user, getToken);
 
   getToken().then((res) => console.log(res));
-
-  const data = orders?.map((order) => ({
-    name: order.event.name,
-    id: order._id,
-    mode: order.event.isOnline,
-    datetime: order.event.datetime,
-    total: order.total,
-  }));
-  console.log(data);
 
   if (!user) {
     return (
@@ -84,11 +82,11 @@ const Admin = ({ events }) => {
             },
           },
         ]}
-        data={data}
+        data={orders}
         actions={[
           {
-            icon: "save",
-            tooltip: "Save User",
+            icon: "cancel",
+            tooltip: "Cancel Event",
             onClick: (event, rowData) => alert("You saved " + rowData.name),
           },
         ]}
