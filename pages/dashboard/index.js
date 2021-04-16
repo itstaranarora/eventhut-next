@@ -40,16 +40,14 @@ const Admin = ({ events }) => {
 
   getToken().then((res) => console.log(res));
 
-  let data = [];
-  if (orders) {
-    data = orders?.map((order) => ({
-      name: order.event.name,
-      id: order._id,
-      mode: order.event.isOnline,
-      datetime: order.event.datetime,
-      total: order.total,
-    }));
-  }
+  const data = orders?.map((order) => ({
+    name: order.event.name,
+    id: order._id,
+    mode: order.event.isOnline,
+    datetime: order.event.datetime,
+    total: order.total,
+  }));
+  console.log(data);
 
   if (!user) {
     return (
