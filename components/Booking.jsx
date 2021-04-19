@@ -1,7 +1,41 @@
 import { format } from "date-fns";
 import { twoDecimals } from "utils/format";
+import { useRouter } from "next/router";
+import { useAuth } from "context/AuthContext";
+import { loadStripe } from "@stripe/stripe-js";
+import { STRIPE_PK, API_URL } from "utils/urls";
+
+const stripePromise = loadStripe(STRIPE_PK);
 
 function Booking({ data }) {
+  const { user, getToken } = useAuth();
+  const router = useRouter();
+  console.log(data);
+
+  const handleBook = async () => {
+    const stripe = await stripePromise;
+    const token = await getToken();
+
+    const res = await fetch(`${API_URL}/bookings`, {
+      method: "POST",
+      body: JSON.stringify({ event: { id: data.id } }),
+      headers: {
+        "Content-type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    console.log(res);
+
+    const session = await res.json();
+
+    const result = await stripe.redirectToCheckout({
+      sessionId: session.id,
+    });
+  };
+
+  const redirectToLogin = () => router.push("/login");
+
   return (
     <div className="booking">
       <div className="booking__info">
@@ -12,7 +46,16 @@ function Booking({ data }) {
         </span>
         <p>{data?.price === 0 ? "Free" : `₹ ${twoDecimals(data?.price)}`}</p>
       </div>
-      <button className="booking_btnbook">Book Now</button>
+      {!user && (
+        <button onClick={redirectToLogin} className="booking_btnbook">
+          Login to Book
+        </button>
+      )}
+      {user && (
+        <button onClick={handleBook} className="booking_btnbook">
+          Book Now
+        </button>
+      )}
       <button className="booking_btnshare">Promote Program</button>
       <span>No Refunds</span>
       <style jsx>

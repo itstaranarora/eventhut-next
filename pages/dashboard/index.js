@@ -19,13 +19,17 @@ const useBooking = (user, getToken) => {
             },
           });
           const data = await order_res.json();
-          const result = data?.map((order) => ({
-            name: order.event.name,
-            id: order._id,
-            mode: order.event.isOnline,
-            datetime: order.event.datetime,
-            total: order.total,
-          }));
+          const filterData = data?.filter((item) => item.status === "paid");
+          const result = filterData?.map((order) => {
+            return {
+              name: order.event.name,
+              id: order._id,
+              mode: order.event.isOnline,
+              datetime: order.event.datetime,
+              total: order.total,
+            };
+          });
+
           setOrders(result);
         } catch (err) {
           setOrders([]);
