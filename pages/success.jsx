@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 import Head from "next/head";
 import { API_URL } from "utils/urls";
 
@@ -18,7 +19,7 @@ const useBooking = (session_id) => {
           },
           body: JSON.stringify({ checkout_session: session_id }),
         });
-        const data = res.json();
+        const data = await res.json();
         setBooking(data);
       } catch (err) {
         setBooking(null);
@@ -36,20 +37,45 @@ export default function Success() {
   const { session_id } = router.query;
 
   const { booking, loading } = useBooking(session_id);
+  console.log(booking);
 
   return (
     <div>
       <Head>
         <title>Thank you for your purchase</title>
       </Head>
-      <h2>{booking ? "Success" : "Not Success"}</h2>
-      <button
-        onClick={() => {
-          router.push("/");
-        }}
-      >
-        Go to dashboard
-      </button>
+      <div className="max">
+        <img src="/Logo.svg" alt="logo" />
+        <p>Booking Ref: {booking?.checkout_session}</p>
+        <h1>You successfully created your reservation</h1>
+        <Link href="/dashboard">
+          <a>Go Back to Homepage</a>
+        </Link>
+      </div>
+
+      <style jsx>{`
+        .max {
+          display: flex;
+          height: 100vh;
+          background: #fff;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        img {
+          margin-top: 8rem;
+          margin-bottom: 4rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        h1 {
+          font-size: 3rem;
+          margin: 0.5rem 0;
+        }
+      `}</style>
     </div>
   );
 }
