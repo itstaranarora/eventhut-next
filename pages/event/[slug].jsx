@@ -35,14 +35,6 @@ function Event({ event }) {
   const { slug } = router.query;
   const response = event;
 
-  //   if (loading) {
-  //     return (
-  //       <div className="event__loading">
-  //         <img src={darkMode ? logoDark : Logo} alt="logo" />
-  //       </div>
-  //     );
-  //   }
-
   return (
     <Layout>
       <div className="event">

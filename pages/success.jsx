@@ -27,7 +27,7 @@ const useBooking = (session_id) => {
       setLoading(false);
     };
     fetchBooking();
-  }, []);
+  }, [session_id]);
 
   return { booking, loading };
 };
@@ -37,6 +37,14 @@ export default function Success() {
   const { session_id } = router.query;
 
   const { booking, loading } = useBooking(session_id);
+
+  if (loading) {
+    return (
+      <div className="event__loading">
+        <img src="/Logo.svg" alt="logo" />
+      </div>
+    );
+  }
 
   return (
     <div>
@@ -48,7 +56,7 @@ export default function Success() {
         <p>Booking Ref: {booking?.checkout_session}</p>
         <h1>You successfully created your reservation</h1>
         <Link href="/dashboard">
-          <a>Go Back to Homepage</a>
+          <a>Go to Dashboard</a>
         </Link>
       </div>
 

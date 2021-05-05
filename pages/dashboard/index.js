@@ -28,6 +28,7 @@ const useBooking = (user, getToken) => {
               mode: order.event.isOnline,
               datetime: order.event.datetime,
               total: order.total,
+              slug: order.event.slug,
             };
           });
 
@@ -104,6 +105,13 @@ const Admin = ({ events }) => {
           },
         ]}
         data={orders}
+        actions={[
+          {
+            icon: "launch",
+            tooltip: "View Event",
+            onClick: (event, rowData) => router.push(`/event/${rowData.slug}`),
+          },
+        ]}
         editable={{
           onRowDelete: (oldData) =>
             new Promise((resolve, reject) => {

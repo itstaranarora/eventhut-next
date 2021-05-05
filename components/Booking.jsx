@@ -2,14 +2,38 @@ import { format } from "date-fns";
 import { twoDecimals } from "utils/format";
 import { useRouter } from "next/router";
 import { useAuth } from "context/AuthContext";
+import Popover from "@material-ui/core/Popover";
+import { useState } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { STRIPE_PK, API_URL } from "utils/urls";
+import {
+  FacebookShareButton,
+  WhatsappShareButton,
+  TwitterShareButton,
+  LinkedinShareButton,
+  FacebookIcon,
+  WhatsappIcon,
+  TwitterIcon,
+  LinkedinIcon,
+} from "react-share";
+import parseWithOptions from "date-fns/fp/parseWithOptions/index.js";
 
 const stripePromise = loadStripe(STRIPE_PK);
 
 function Booking({ data }) {
   const { user, getToken } = useAuth();
   const router = useRouter();
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
 
   const handleBook = async () => {
     const stripe = await stripePromise;
@@ -33,6 +57,12 @@ function Booking({ data }) {
 
   const redirectToLogin = () => router.push("/login");
 
+  let path;
+
+  if (typeof window !== "undefined") {
+    path = window.location.href;
+  }
+
   return (
     <div className="booking">
       <div className="booking__info">
@@ -53,8 +83,43 @@ function Booking({ data }) {
           Book Now
         </button>
       )}
-      <button className="booking_btnshare">Promote Program</button>
+      <button onClick={handleClick} className="booking_btnshare">
+        Promote Program
+      </button>
       <span>No Refunds</span>
+      <Popover
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "center",
+        }}
+        transformOrigin={{
+          vertical: "top",
+          horizontal: "center",
+        }}
+      >
+        <div style={{ padding: "0.5rem 1rem" }}>
+          <h4 style={{ textAlign: "center", margin: "0.5rem 0" }}>
+            Share with your Friends
+          </h4>
+          <div className="popover">
+            <FacebookShareButton url={path}>
+              <FacebookIcon size={50} round />
+            </FacebookShareButton>
+            <WhatsappShareButton style={{ margin: "0 10px" }} url={path}>
+              <WhatsappIcon size={50} round />
+            </WhatsappShareButton>
+            <TwitterShareButton url={path}>
+              <TwitterIcon size={50} round />
+            </TwitterShareButton>
+            <LinkedinShareButton style={{ marginLeft: 10 }} url={path}>
+              <LinkedinIcon size={50} round />
+            </LinkedinShareButton>
+          </div>
+        </div>
+      </Popover>
       <style jsx>
         {`
           .booking {
@@ -65,6 +130,11 @@ function Booking({ data }) {
             display: flex;
             flex-direction: column;
             text-align: center;
+          }
+
+          .popover {
+            display: flex;
+            justify-content: space-between;
           }
 
           .booking__info {
