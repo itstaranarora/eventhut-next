@@ -354,7 +354,7 @@ export async function getStaticPaths() {
   const events_res = await fetch(`${API_URL}/events`);
   const events = await events_res.json();
   return {
-    paths: events.map((events) => ({
+    paths: events?.map((events) => ({
       params: { slug: String(events.slug) },
     })),
     fallback: true,
