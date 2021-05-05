@@ -4,6 +4,7 @@ import MaterialTable from "material-table";
 import { useAuth } from "context/AuthContext";
 import { useRouter } from "next/router";
 import { API_URL } from "utils/urls";
+import { createRef } from "react";
 
 const useBooking = (user, getToken) => {
   const [orders, setOrders] = useState([]);
@@ -40,16 +41,15 @@ const useBooking = (user, getToken) => {
     fetchOrders();
   }, [user]);
 
-  return orders;
+  return { orders, setOrders };
 };
 
 const Admin = ({ events }) => {
   const { user, getToken } = useAuth();
   const router = useRouter();
+  const tableRef = createRef();
 
-  const orders = useBooking(user, getToken);
-
-  getToken().then((res) => console.log(res));
+  const { orders, setOrders } = useBooking(user, getToken);
 
   if (!user) {
     return (
@@ -63,10 +63,27 @@ const Admin = ({ events }) => {
     if (!user) router.push("/");
   }, 10000);
 
+  async function handleDeleteEvent(id) {
+    const token = await getToken();
+
+    fetch(`${API_URL}/bookings/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+        Authorization: `Bearer ${token}`,
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        alert("Your booking is cancelled. For refund you can reach us");
+      });
+  }
+
   return (
     <AdminLayout>
       <MaterialTable
         title="Your Events"
+        tableRef={tableRef}
         columns={[
           { title: "Name", field: "name" },
           {
@@ -87,13 +104,19 @@ const Admin = ({ events }) => {
           },
         ]}
         data={orders}
-        actions={[
-          {
-            icon: "cancel",
-            tooltip: "Cancel Event",
-            onClick: (event, rowData) => alert("You saved " + rowData.name),
-          },
-        ]}
+        editable={{
+          onRowDelete: (oldData) =>
+            new Promise((resolve, reject) => {
+              setTimeout(() => {
+                const dataDelete = [...orders];
+                const index = oldData.tableData.id;
+                dataDelete.splice(index, 1);
+                setOrders([...dataDelete]);
+                handleDeleteEvent(oldData.id);
+                resolve();
+              }, 1000);
+            }),
+        }}
       />
     </AdminLayout>
   );

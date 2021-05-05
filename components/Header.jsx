@@ -4,7 +4,6 @@ import { useAuth } from "context/AuthContext";
 
 function Header() {
   const { user } = useAuth();
-  console.log(user);
   return (
     <header className="header container ">
       <Link href="/">

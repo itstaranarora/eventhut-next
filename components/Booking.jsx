@@ -10,7 +10,6 @@ const stripePromise = loadStripe(STRIPE_PK);
 function Booking({ data }) {
   const { user, getToken } = useAuth();
   const router = useRouter();
-  console.log(data);
 
   const handleBook = async () => {
     const stripe = await stripePromise;
@@ -24,8 +23,6 @@ function Booking({ data }) {
         Authorization: `Bearer ${token}`,
       },
     });
-
-    console.log(res);
 
     const session = await res.json();
 

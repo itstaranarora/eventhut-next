@@ -162,7 +162,6 @@ export default function Layout({ children }) {
   const classes = useStyle();
   const router = useRouter();
   const [open, setOpen] = useState(true);
-  console.log(user);
   const handleDrawerOpen = () => {
     setOpen(true);
   };

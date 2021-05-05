@@ -32,7 +32,7 @@ export default function MyApp(props) {
 
   return (
     <AuthProvider>
-      <content>
+      <>
         <Head>
           <meta
             name="viewport"
@@ -48,7 +48,7 @@ export default function MyApp(props) {
           <CssBaseline />
           <Component {...pageProps} />
         </ThemeProvider>
-      </content>
+      </>
     </AuthProvider>
   );
 }

@@ -37,7 +37,6 @@ export default function Success() {
   const { session_id } = router.query;
 
   const { booking, loading } = useBooking(session_id);
-  console.log(booking);
 
   return (
     <div>
