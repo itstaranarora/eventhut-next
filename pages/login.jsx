@@ -64,10 +64,10 @@ function Login() {
       </div>
       <div className="login__right">
         <h2>Hello Friend!</h2>
-        <p>Enter your personal details and start your journey with us</p>
-        <Link href="/signup">
-          <a className="login__signupbtn">Sign Up</a>
-        </Link>
+        <p style={{ textAlign: "center" }}>
+          Don't have an account. Don't worry just type your email <br /> and
+          start your journey with Eventhut
+        </p>
       </div>
       <style jsx>
         {`
